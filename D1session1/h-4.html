@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            mJson = '{ "firstName": "satya", "lastName": "mohapatra", "Salary": 5000, "permanentStaff": true }';
+            department = '{ "departmentId": 3 ,"departmentName": "Payroll"}';
+            //skills='{"skill":[{"id":1,"value":"HTML"},{"id":2,"value":"CSS"},{"id":3,"value":"JavaScript"}]}';
+            const Object=JSON.parse(mJson);
+            const department1 =JSON.parse(department);
+            console.log("FirstName: "+Object.firstName);
+            console.log("lastName: "+Object.lastName);
+            console.log("Salary: "+Object.Salary);
+            console.log("PermanentStaff: "+Object.permanentStaff);
+            console.log("departmentId: "+department1.departmentId);
+            console.log("departmentName: "+department1.departmentName);
+           
+    </script>
+</body>
+</html>
